@@ -13,6 +13,7 @@ export default async function uploadImage(
     let fileUpload = null;
     let url = null;
     const meta = metaData ? metaData : null;
+    console.log("Meta Data", meta);
     try {
       fileUpload = await uploadBytes(reference, file);
       if (fileUpload) {
